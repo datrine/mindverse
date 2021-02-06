@@ -1,9 +1,13 @@
-
-import "@fontsource/roboto"
-import '../styles/globals.css'
+import "@fontsource/roboto";
+import Layout from "../components/Layout";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
-export default MyApp
+export default MyApp;
