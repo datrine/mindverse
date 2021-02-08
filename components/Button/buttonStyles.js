@@ -8,6 +8,8 @@ export const Button = styled.button`
   font-size: 1.6rem;
   transition: 0.3s ease-in-out all;
   cursor: pointer;
+  margin-right: ${(props) => (props.mr ? `${props.mr}` : 0)};
+  font-family: "Roboto", sans-serif;
 
   :hover {
     opacity: 0.7;
@@ -30,6 +32,26 @@ export const ButtonPrimaryInv = styled(Button)`
 //Button primaryInv(color) for header's primaryInv button
 export const HButtonPrimaryInv = styled(ButtonPrimaryInv)`
   margin-right: 2rem;
+`;
+
+//Button white(inverted)
+export const ButtonWhiteInv = styled(Button)`
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+`;
+
+//Button Alternate
+export const ButtonAlternate = styled(Button)`
+  background-color: var(--color-alternate);
+  color: var(--color-white);
+  border: 1px solid var(--color-alternate);
+`;
+
+//Button Yellow
+export const ButtonYellow = styled(Button)`
+  background-color: #ffbc62;
+  color: var(--color-white);
 `;
 
 //footer Buttons

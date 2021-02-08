@@ -9,6 +9,10 @@ import {
   FooterTopLink,
   FooterIcon,
   FooterText,
+  FooterBottom,
+  FooterLogo,
+  FooterBottomLink,
+  FooterTextSmall,
 } from "./footerStyles";
 
 import { FooterButton } from "../../Button/buttonStyles";
@@ -90,6 +94,18 @@ export default function Footer() {
             </FooterButton>
           </FooterTopItem>
         </FooterTop>
+        <FooterBottom>
+          <FooterLogo src="/images/svg/logo-white.svg" alt="mindeverse logo" />
+          <div>
+            <Link href="/" passHref>
+              <FooterBottomLink>Terms of use</FooterBottomLink>
+            </Link>
+            <Link href="/" passHref>
+              <FooterBottomLink>Privacy & Policy</FooterBottomLink>
+            </Link>
+            <FooterTextSmall>2021 @ Mindverse</FooterTextSmall>
+          </div>
+        </FooterBottom>
       </FooterInner>
     </FooterContainer>
   );

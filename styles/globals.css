@@ -4,6 +4,11 @@
   --color-tertiary: #3a6372;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-alternate: #110c53;
+
+  --fontsize-sectionheader: 3rem;
+  --fontsize-miniheader: 1.6rem;
+  --fontsize-normal: 1.4rem;
 }
 
 html {
